@@ -1,6 +1,9 @@
 package com.mavenit.bdd.training.drivers;
 
 import cucumber.api.Scenario;
+import io.github.bonigarcia.wdm.ChromeDriverManager;
+import io.github.bonigarcia.wdm.FirefoxDriverManager;
+import io.github.bonigarcia.wdm.InternetExplorerDriverManager;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
@@ -14,19 +17,22 @@ import java.util.concurrent.TimeUnit;
 
 public class DriverFactory {
 
-    private String browser = "";
+    private String browser = "chrome";
     public static WebDriver driver;
 
 
     public void openBrowser() {
         switch (browser) {
             case "chrome":
+                ChromeDriverManager.getInstance().setup();
                 driver = new ChromeDriver();
                 break;
             case "ie":
+                InternetExplorerDriverManager.getInstance().setup();
                 driver = new InternetExplorerDriver();
                 break;
             case "opera":
+                FirefoxDriverManager.getInstance().setup();
                 driver = new OperaDriver();
                 break;
             default:

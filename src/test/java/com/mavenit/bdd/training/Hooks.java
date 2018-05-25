@@ -13,7 +13,7 @@ public class Hooks {
     public void setUp(){
         driverFactory.openBrowser();
         driverFactory.navigate("http://www.argos.co.uk");
-        driverFactory.maxWindow();
+//        driverFactory.maxWindow();
         driverFactory.applyImpWait();
 
     }
