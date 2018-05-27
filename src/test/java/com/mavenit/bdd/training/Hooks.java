@@ -7,10 +7,10 @@ import cucumber.api.java.Before;
 
 public class Hooks {
 
-    DriverFactory driverFactory=new DriverFactory();
+    DriverFactory driverFactory = new DriverFactory();
 
     @Before
-    public void setUp(){
+    public void setUp() {
         driverFactory.openBrowser();
         driverFactory.navigate("http://www.argos.co.uk");
         driverFactory.maxWindow();
@@ -19,9 +19,8 @@ public class Hooks {
     }
 
     @After
-    public void tearDown(Scenario scenario){
-
-        if(scenario.isFailed()){
+    public void tearDown(Scenario scenario) {
+        if (!scenario.isFailed()) {
             driverFactory.embedScreenshot(scenario);
         }
         driverFactory.closeBrowser();
