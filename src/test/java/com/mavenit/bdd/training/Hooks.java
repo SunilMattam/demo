@@ -20,7 +20,7 @@ public class Hooks {
 
     @After
     public void tearDown(Scenario scenario) {
-        if (!scenario.isFailed()) {
+        if (scenario.isFailed()) {
             driverFactory.embedScreenshot(scenario);
         }
         driverFactory.closeBrowser();
