@@ -15,7 +15,7 @@ import java.util.concurrent.TimeUnit;
 
 public class DriverFactory {
 
-    private String browser = "";
+    private String browser = "chrome";
     public static WebDriver driver;
 
     public DriverFactory(){
@@ -36,6 +36,7 @@ public class DriverFactory {
                 driver = new OperaDriver();
                 break;
             default:
+                FirefoxDriverManager.getInstance().setup();
                 driver = new FirefoxDriver();
                 break;
         }
