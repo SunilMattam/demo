@@ -12,7 +12,7 @@ public class Hooks {
     @Before
     public void setUp() {
         driverFactory.openBrowser();
-        driverFactory.navigate("http://www.argos.co.uk");
+        driverFactory.navigate("https://www.amazon.co.uk/");
         driverFactory.maxWindow();
         driverFactory.applyImpWait();
         driverFactory.closeCookies();
