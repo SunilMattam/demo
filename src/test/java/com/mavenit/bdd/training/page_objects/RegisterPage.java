@@ -22,7 +22,7 @@ public class RegisterPage extends DriverFactory {
     @FindBy(id = "Password")
     private WebElement password_txt;
 
-    @FindBy(id = "ConfirmPassword")
+    @FindBy(id = "ConfirmPasswordss")
     private WebElement confirmPasswordTxt;
 
 
