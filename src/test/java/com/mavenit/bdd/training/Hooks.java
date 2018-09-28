@@ -12,7 +12,7 @@ public class Hooks {
     @Before
     public void setUp() {
         driverFactory.openBrowser();
-        driverFactory.navigate("https://demo.nopcommerce.com/register");
+        driverFactory.navigate("https://www.made.com/");
         driverFactory.maxWindow();
         driverFactory.applyImpWait();
       //  driverFactory.closeCookies();
