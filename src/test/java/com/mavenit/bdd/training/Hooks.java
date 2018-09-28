@@ -19,7 +19,7 @@ public class Hooks {
 
     }
 
-  //  @After
+    @After
     public void tearDown(Scenario scenario) {
         if (scenario.isFailed()) {
             driverFactory.embedScreenshot(scenario);
