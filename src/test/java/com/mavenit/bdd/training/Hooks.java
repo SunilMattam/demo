@@ -15,6 +15,7 @@ public class Hooks {
         driverFactory.navigate("http://www.argos.co.uk");
         driverFactory.maxWindow();
         driverFactory.applyImpWait();
+        driverFactory.closeCookies();
 
     }
 
