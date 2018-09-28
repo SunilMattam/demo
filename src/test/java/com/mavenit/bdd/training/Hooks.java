@@ -12,14 +12,14 @@ public class Hooks {
     @Before
     public void setUp() {
         driverFactory.openBrowser();
-        driverFactory.navigate("https://www.amazon.co.uk/");
+        driverFactory.navigate("https://demo.nopcommerce.com/register");
         driverFactory.maxWindow();
         driverFactory.applyImpWait();
-        driverFactory.closeCookies();
+      //  driverFactory.closeCookies();
 
     }
 
-    @After
+  //  @After
     public void tearDown(Scenario scenario) {
         if (scenario.isFailed()) {
             driverFactory.embedScreenshot(scenario);

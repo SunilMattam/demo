@@ -2,6 +2,7 @@ package com.mavenit.bdd.training.step_def;
 
 import com.mavenit.bdd.training.page_objects.HeaderPage;
 import com.mavenit.bdd.training.page_objects.ResultsPage;
+import cucumber.api.PendingException;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
