@@ -12,5 +12,4 @@ Feature: Filter
     Examples:
       | value | expectedValue |
       | 5only | 5.0           |
-      | 4only | 4.0           |
 

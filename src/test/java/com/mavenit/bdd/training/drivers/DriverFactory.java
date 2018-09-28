@@ -51,7 +51,7 @@ public class DriverFactory {
     }
 
     public void applyImpWait(){
-        driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+        driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
     }
 
     public void navigate(String url){
