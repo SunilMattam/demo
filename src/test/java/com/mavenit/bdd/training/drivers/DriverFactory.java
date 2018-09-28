@@ -32,7 +32,6 @@ public class DriverFactory {
                 driver = new OperaDriver();
                 break;
             default:
-                FirefoxDriverManager.getInstance().setup();
                 driver = new FirefoxDriver();
                 break;
         }
