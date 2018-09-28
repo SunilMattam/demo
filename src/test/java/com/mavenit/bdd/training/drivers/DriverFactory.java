@@ -46,7 +46,10 @@ public class DriverFactory {
     }
 
     public void maxWindow(){
-        driver.manage().window().maximize();
+//        driver.manage().window().maximize();
+        Dimension d = new Dimension(1280,1000);
+        //Resize the current window to the given dimension
+        driver.manage().window().setSize(d);
     }
 
     public void applyImpWait(){
