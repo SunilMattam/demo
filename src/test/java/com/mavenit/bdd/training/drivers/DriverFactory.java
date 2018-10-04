@@ -36,7 +36,7 @@ public class DriverFactory {
                 driver = new OperaDriver();
                 break;
             default:
-                FirefoxDriverManager.getInstance().setup();
+//                FirefoxDriverManager.getInstance().setup();
                 driver = new FirefoxDriver();
                 break;
         }
@@ -51,7 +51,7 @@ public class DriverFactory {
     }
 
     public void maxWindow() {
-        driver.manage().window().setSize(new Dimension(1044, 784));
+        driver.manage().window().setSize(new Dimension(1920, 1200));
     }
 
     public void applyImpWait() {
