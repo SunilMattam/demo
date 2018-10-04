@@ -14,7 +14,7 @@ public class Hooks {
     @Before
     public void setUp() throws MalformedURLException {
         driverFactory.openBrowser();
-        driverFactory.navigate("https://www.made.com/");
+        driverFactory.navigate("http://www.argos.co.uk");
         driverFactory.maxWindow();
         driverFactory.applyImpWait();
         driverFactory.closeCookies();
