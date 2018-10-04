@@ -5,12 +5,14 @@ import cucumber.api.Scenario;
 import cucumber.api.java.After;
 import cucumber.api.java.Before;
 
+import java.net.MalformedURLException;
+
 public class Hooks {
 
     DriverFactory driverFactory = new DriverFactory();
 
     @Before
-    public void setUp() {
+    public void setUp() throws MalformedURLException {
         driverFactory.openBrowser();
         driverFactory.navigate("https://www.made.com/");
         driverFactory.maxWindow();
