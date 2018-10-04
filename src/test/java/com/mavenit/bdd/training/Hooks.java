@@ -15,7 +15,7 @@ public class Hooks {
         driverFactory.navigate("https://www.made.com/");
         driverFactory.maxWindow();
         driverFactory.applyImpWait();
-      //  driverFactory.closeCookies();
+        driverFactory.closeCookies();
 
     }
 
