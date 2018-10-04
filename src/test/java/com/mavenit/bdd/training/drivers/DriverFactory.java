@@ -59,7 +59,7 @@ public class DriverFactory {
     }
 
     public void maxWindow() {
-        driver.manage().window().setSize(new Dimension(1920, 1200));
+        driver.manage().window().maximize();
     }
 
     public void applyImpWait() {
